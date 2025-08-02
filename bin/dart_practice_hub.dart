@@ -27,6 +27,14 @@ void main(List<String> arguments) {
 
   operator();
 
+  dynamic value = "Hello";
+
+  // TypeCast dynamic -> String
+  String str= value as String;
+
+  // Print String
+  print(str);
+
 }
 
 void operator(){
