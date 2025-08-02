@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dart_practice_hub/dart_practice_hub.dart' as dart_practice_hub;
 
 void main(List<String> arguments) {
@@ -25,7 +27,7 @@ void main(List<String> arguments) {
   const name = "hossain";
   print(name);*/
 
-  operator();
+  //operator();
 
   dynamic value = "Hello";
 
@@ -33,7 +35,22 @@ void main(List<String> arguments) {
   String str= value as String;
 
   // Print String
-  print(str);
+  //print(str);
+
+  /*print("Enter your name");
+  String? name = stdin.readLineSync();
+
+  print("Hello $name");*/
+
+  print("Enter first number");
+  int? n1 = int.parse(stdin.readLineSync()!);
+
+  print("Enter second number");
+  int? n2 = int.parse(stdin.readLineSync()!);
+
+  // Adding them and printing them
+  int sum = n1 + n2;
+  print("Sum is $sum");
 
 }
 
