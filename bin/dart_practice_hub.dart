@@ -42,7 +42,7 @@ void main(List<String> arguments) {
 
   print("Hello $name");*/
 
-  print("Enter first number");
+  /*print("Enter first number");
   int? n1 = int.parse(stdin.readLineSync()!);
 
   print("Enter second number");
@@ -50,7 +50,26 @@ void main(List<String> arguments) {
 
   // Adding them and printing them
   int sum = n1 + n2;
-  print("Sum is $sum");
+  print("Sum is $sum");*/
+
+  // Nullable variables (can be assigned null)
+  String? name;
+  int? age;
+
+  // Assigning values
+  name = null;
+  age = null;
+
+  // Checking for null values
+  // using null-aware operators
+  print(name ?? "Unknown"); // Output: Vinay
+  print(age ?? "No age provided"); // Output: No age provided
+
+  // Using null-aware access (?.)
+  // and null assertion (!)
+  int? length = name?.length;
+
+  print(length);
 
 }
 
