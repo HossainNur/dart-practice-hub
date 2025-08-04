@@ -71,12 +71,24 @@ void main(List<String> arguments) {
 
   print(length);*/
 
-  var listItem = [ 1, 2, 3, 4, 5 ];
+  /*var listItem = [ 1, 2, 3, 4, 5 ];
   for (int i in listItem) {
     print(i);
-  }
+  }*/
+
+  // input
+  var i = 20;
+
+  print('fibonacci($i) = ${fibonacci(i)}');
 
 }
+
+int fibonacci(int n)
+{
+  // This is recursive function as it calls itself
+  return n < 2 ? n : (fibonacci(n - 1) + fibonacci(n - 2));
+}
+
 
 void operator(){
   int a = 2;
