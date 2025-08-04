@@ -53,7 +53,7 @@ void main(List<String> arguments) {
   print("Sum is $sum");*/
 
   // Nullable variables (can be assigned null)
-  String? name;
+  /*String? name;
   int? age;
 
   // Assigning values
@@ -69,7 +69,12 @@ void main(List<String> arguments) {
   // and null assertion (!)
   int? length = name?.length;
 
-  print(length);
+  print(length);*/
+
+  var listItem = [ 1, 2, 3, 4, 5 ];
+  for (int i in listItem) {
+    print(i);
+  }
 
 }
 
