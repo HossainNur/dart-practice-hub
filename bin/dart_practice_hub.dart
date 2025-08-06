@@ -96,7 +96,7 @@ void main(List<String> arguments) {
   // Key is defined
   print(gfg[0]);*/
 
-  int gfg = 1;
+  /*int gfg = 1;
   switch (gfg)
   {
     case 1: {
@@ -115,6 +115,29 @@ void main(List<String> arguments) {
       print("This is default case");
     }
     break;
+  }*/
+
+  int gfg1 = 1;
+  String gfg2 = "Geek";
+  switch (gfg1) {
+    case 1: {
+      switch (gfg2) {
+        case 'Geek': {
+          print("Welcome");
+        }
+      }
+    }
+    break;
+
+    case 2: {
+      print("number 2");
+    }
+    break;
+
+
+    default: {
+      print("This is default case");
+    } break;
   }
 
 }
