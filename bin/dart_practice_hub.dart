@@ -117,7 +117,7 @@ void main(List<String> arguments) {
     break;
   }*/
 
-  int gfg1 = 1;
+  /*int gfg1 = 1;
   String gfg2 = "Geek";
   switch (gfg1) {
     case 1: {
@@ -138,7 +138,31 @@ void main(List<String> arguments) {
     default: {
       print("This is default case");
     } break;
-  }
+  }*/
+
+  // Get the current date and time.
+  DateTime currentDateTime = DateTime.now();
+  print("Current Date and Time: $currentDateTime");
+
+  // Create a new DateTime object representing January 1, 2000.
+  DateTime y2kDate = DateTime(2000);
+  print("Y2K Date (Jan 1, 2000): $y2kDate");
+
+  // Specify the exact date (January 2, 2000).
+  y2kDate = DateTime(2000, 1, 2);
+  print("Y2K Date (Jan 2, 2000): $y2kDate");
+
+  // Create a DateTime object using UTC (Coordinated Universal Time).
+  y2kDate = DateTime.utc(2000);
+  print("Y2K Date (UTC, Jan 1, 2000): $y2kDate");
+
+  // Create a DateTime object using milliseconds since the Unix epoch (January 1, 1970).
+  y2kDate = DateTime.fromMillisecondsSinceEpoch(946684800000, isUtc: true);
+  print("Y2K Date from Unix Timestamp (UTC): $y2kDate");
+
+  // Parse an ISO 8601 formatted date string.
+  y2kDate = DateTime.parse('2000-01-01T00:00:00Z');
+  print("Y2K Date from ISO 8601 String: $y2kDate");
 
 }
 
