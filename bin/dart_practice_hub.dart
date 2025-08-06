@@ -82,7 +82,7 @@ void main(List<String> arguments) {
   // print('fibonacci($i) = ${fibonacci(i)}');
 
   // Creating Map using Constructors
-  var gfg = new Map();
+  /*var gfg = new Map();
 
   // Inserting values into Map
   gfg [0] = 'Geeks';
@@ -94,7 +94,28 @@ void main(List<String> arguments) {
 
   // Printing Specific Content
   // Key is defined
-  print(gfg[0]);
+  print(gfg[0]);*/
+
+  int gfg = 1;
+  switch (gfg)
+  {
+    case 1: {
+      print(" number 1");
+    }
+    break;
+    case 2: {
+      print("number 2");
+    }
+    break;
+    case 3: {
+      print("number 3");
+    }
+    break;
+    default: {
+      print("This is default case");
+    }
+    break;
+  }
 
 }
 
