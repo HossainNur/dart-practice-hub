@@ -164,6 +164,31 @@ void main(List<String> arguments) {
   y2kDate = DateTime.parse('2000-01-01T00:00:00Z');
   print("Y2K Date from ISO 8601 String: $y2kDate");
 
+
+  DateTime y2kDateUtc = DateTime.utc(2000);
+
+  // Add one year (366 days because 2000 was a leap year).
+  DateTime y2001DateUtc = y2kDateUtc.add(Duration(days: 366));
+  print("Year after adding 366 days:"); // Should print true
+  print("${y2001DateUtc.year == 2001}");
+
+  // Subtract 30 days from the year 2001 date.
+  DateTime december2000Date = y2001DateUtc.subtract(Duration(days: 30));
+
+  // Ensure the year is still 2000 after subtraction.
+  assert(december2000Date.year == 2000);
+
+  // Check if the month is December.
+  print("Month after subtracting 30 days:"); // Should print true
+  print("${december2000Date.month == 12}");
+
+  // Calculate the difference between Y2K (2000-01-01) and Y2001 (2001-01-01).
+  Duration dateDifference = y2001DateUtc.difference(y2kDateUtc);
+
+  // Print if the difference in days is 366 (since 2000 was a leap year).
+  print("Difference in days between Y2K and Y2001:"); // Should print true
+  print("${dateDifference.inDays == 366}");
+
 }
 
 int fibonacci(int n)
